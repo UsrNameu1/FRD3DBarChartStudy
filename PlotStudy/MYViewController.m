@@ -8,22 +8,63 @@
 
 #import "MYViewController.h"
 
+#import "MY3DChartDataSource.h"
+
+#import "FRD3DBarChartViewController.h"
+
 @interface MYViewController ()
+
+@property (weak, nonatomic) FRD3DBarChartViewController *chartViewController;
+
+@property (nonatomic) id<FRD3DBarChartViewControllerDelegate> chartDataSource;
 
 @end
 
 @implementation MYViewController
 
+#pragma mark - Lifecycle methods
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _chartDataSource = [MY3DChartDataSource new];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.chartViewController updateChartAnimated:NO
+                                animationDuration:0.0f
+                                          options:kUpdateChartOptionsDoNotUpdateLegends];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.chartViewController updateChartAnimated:YES
+                                animationDuration:1.0f
+                                          options:kUpdateChartOptionsDoNotUpdateLegends];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UIViewController methods
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:NSStringFromClass([FRD3DBarChartViewController class])]) {
+        self.chartViewController = segue.destinationViewController;
+        self.chartViewController.frd3dBarChartDelegate = self.chartDataSource;
+    }
 }
 
 @end
