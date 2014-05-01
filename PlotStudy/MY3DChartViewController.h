@@ -1,5 +1,5 @@
 //
-//  MYViewController.h
+//  MY3DChartViewController.h
 //  PlotStudy
 //
 //  Created by adachi yuichi on 2014/04/28.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYViewController : UIViewController
+@interface MY3DChartViewController : UIViewController
 
 @end

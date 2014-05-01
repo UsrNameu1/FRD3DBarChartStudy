@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 yad. All rights reserved.
 //
 
-#import "MYViewController.h"
+#import "MY3DChartViewController.h"
 
 #import "MY3DChartDataSource.h"
 
 #import "FRD3DBarChartViewController.h"
 
-@interface MYViewController ()
+@interface MY3DChartViewController ()
 
 @property (weak, nonatomic) FRD3DBarChartViewController *chartViewController;
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation MYViewController
+@implementation MY3DChartViewController
 
 #pragma mark - Lifecycle methods
 
