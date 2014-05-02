@@ -33,24 +33,6 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    [self.chartViewController updateChartAnimated:NO
-                                animationDuration:0.0f
-                                          options:kUpdateChartOptionsDoNotUpdateLegends];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    
-    [self.chartViewController updateChartAnimated:YES
-                                animationDuration:1.0f
-                                          options:kUpdateChartOptionsDoNotUpdateLegends];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

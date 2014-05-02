@@ -33,12 +33,12 @@ static const CGFloat InitialMaxValue = 10.0f;
 
 - (int)frd3DBarChartViewControllerNumberColumns:(FRD3DBarChartViewController *)frd3DBarChartViewController
 {
-    return self.numberOfColumns;
+    return (int)self.numberOfColumns;
 }
 
 - (int)frd3DBarChartViewControllerNumberRows:(FRD3DBarChartViewController *)frd3DBarChartViewController
 {
-    return self.numberOfRows;
+    return (int)self.numberOfRows;
 }
 
 - (float)frd3DBarChartViewControllerMaxValue:(FRD3DBarChartViewController *)frd3DBarChartViewController
