@@ -30,7 +30,7 @@
 			containerPortal = 14D4B62F190D5D3300B99AC8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14D4B636190D5D3300B99AC8;
-			remoteInfo = PlotStudy;
+			remoteInfo = FRD3DBarChartStudy;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,7 +87,7 @@
 		14D4B62E190D5D3300B99AC8 = {
 			isa = PBXGroup;
 			children = (
-				14D4B640190D5D3300B99AC8 /* PlotStudy */,
+				14D4B640190D5D3300B99AC8 /* FRD3DBarChartStudy */,
 				14D4B639190D5D3300B99AC8 /* Frameworks */,
 				14D4B638190D5D3300B99AC8 /* Products */,
 				DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */,
@@ -115,7 +115,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14D4B640190D5D3300B99AC8 /* PlotStudy */ = {
+		14D4B640190D5D3300B99AC8 /* FRD3DBarChartStudy */ = {
 			isa = PBXGroup;
 			children = (
 				14D4B649190D5D3300B99AC8 /* MYAppDelegate.h */,
@@ -130,7 +130,7 @@
 				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
 				14D4B641190D5D3300B99AC8 /* Supporting Files */,
 			);
-			path = PlotStudy;
+			path = FRD3DBarChartStudy;
 			sourceTree = "<group>";
 		};
 		14D4B641190D5D3300B99AC8 /* Supporting Files */ = {
@@ -162,7 +162,7 @@
 			dependencies = (
 			);
 			name = FRD3DBarChartStudy;
-			productName = PlotStudy;
+			productName = FRD3DBarChartStudy;
 			productReference = 14D4B637190D5D3300B99AC8 /* FRD3DBarChartStudy.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -180,7 +180,7 @@
 				14D4B65E190D5D3300B99AC8 /* PBXTargetDependency */,
 			);
 			name = FRD3DBarChartStudyTests;
-			productName = PlotStudyTests;
+			productName = FRD3DBarChartStudy;
 			productReference = 14D4B658190D5D3300B99AC8 /* FRD3DBarChartStudyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -403,9 +403,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlotStudy/FRD3DBarChartStudy-Prefix.pch";
-				INFOPLIST_FILE = "PlotStudy/FRD3DBarChartStudy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				GCC_PREFIX_HEADER = "FRD3DBarChartStudy/FRD3DBarChartStudy-Prefix.pch";
+				INFOPLIST_FILE = "FRD3DBarChartStudy/FRD3DBarChartStudy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = FRD3DBarChartStudy;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -420,9 +420,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlotStudy/FRD3DBarChartStudy-Prefix.pch";
-				INFOPLIST_FILE = "PlotStudy/FRD3DBarChartStudy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				GCC_PREFIX_HEADER = "FRD3DBarChartStudy/FRD3DBarChartStudy-Prefix.pch";
+				INFOPLIST_FILE = "FRD3DBarChartStudy/FRD3DBarChartStudy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = FRD3DBarChartStudy;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -432,19 +432,19 @@
 		14D4B66D190D5D3300B99AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlotStudy.app/PlotStudy";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRD3DBarChartStudy.app/PFRD3DBarChartStudy";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlotStudy/PlotStudy-Prefix.pch";
+				GCC_PREFIX_HEADER = "FRD3DBarChartStudy/FRD3DBarChartStudy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PlotStudyTests/FRD3DBarChartStudyTests-Info.plist";
+				INFOPLIST_FILE = "FRD3DBarChartStudyTests/FRD3DBarChartStudyTests-Info.plist";
 				PRODUCT_NAME = FRD3DBarChartStudyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -454,15 +454,15 @@
 		14D4B66E190D5D3300B99AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlotStudy.app/PlotStudy";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRD3DBarChartStudy.app/FRD3DBarChartStudy";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlotStudy/PlotStudy-Prefix.pch";
-				INFOPLIST_FILE = "PlotStudyTests/FRD3DBarChartStudyTests-Info.plist";
+				GCC_PREFIX_HEADER = "FRD3DBarChartStudy/FRD3DBarChartStudy-Prefix.pch";
+				INFOPLIST_FILE = "FRD3DBarChartStudyTests/FRD3DBarChartStudyTests-Info.plist";
 				PRODUCT_NAME = FRD3DBarChartStudyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

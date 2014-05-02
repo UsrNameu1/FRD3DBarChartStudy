@@ -8,11 +8,7 @@
 
 #import "MYBarChartViewController.h"
 
-#import "JBBarChartView.h"
-
-@interface MYBarChartViewController () <JBBarChartViewDataSource, JBBarChartViewDelegate>
-
-@property (weak, nonatomic) IBOutlet JBBarChartView *barChartView;
+@interface MYBarChartViewController ()
 
 @end
 
@@ -23,9 +19,6 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
-    self.barChartView.dataSource = self;
-    self.barChartView.delegate = self;
 }
 
 - (void)viewDidLoad
