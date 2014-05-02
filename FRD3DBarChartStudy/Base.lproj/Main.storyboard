@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="320" y="296"/>
         </scene>
-        <!--Bar Chart View Controller - Item 2-->
+        <!--View Controller - Item 2-->
         <scene sceneID="93w-v1-fWK">
             <objects>
-                <viewController id="mae-qk-TQi" customClass="MYBarChartViewController" sceneMemberID="viewController">
+                <viewController id="mae-qk-TQi" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MHZ-RA-0Pn"/>
                         <viewControllerLayoutGuide type="bottom" id="9ee-c7-zFr"/>

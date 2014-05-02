@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		14316B1E190FE8140011B0B5 /* MY3DChartDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 14316B1D190FE8140011B0B5 /* MY3DChartDataSource.m */; };
-		143EB95D191295D8004DEBD7 /* MYBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143EB95C191295D8004DEBD7 /* MYBarChartViewController.m */; };
 		14D4B63B190D5D3300B99AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63A190D5D3300B99AC8 /* Foundation.framework */; };
 		14D4B63D190D5D3300B99AC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63C190D5D3300B99AC8 /* CoreGraphics.framework */; };
 		14D4B63F190D5D3300B99AC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63E190D5D3300B99AC8 /* UIKit.framework */; };
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		14316B1C190FE8140011B0B5 /* MY3DChartDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY3DChartDataSource.h; sourceTree = "<group>"; };
 		14316B1D190FE8140011B0B5 /* MY3DChartDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY3DChartDataSource.m; sourceTree = "<group>"; };
-		143EB95B191295D8004DEBD7 /* MYBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBarChartViewController.h; sourceTree = "<group>"; };
-		143EB95C191295D8004DEBD7 /* MYBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBarChartViewController.m; sourceTree = "<group>"; };
 		14D4B637190D5D3300B99AC8 /* FRD3DBarChartStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRD3DBarChartStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D4B63A190D5D3300B99AC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14D4B63C190D5D3300B99AC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,8 +122,6 @@
 				14316B1D190FE8140011B0B5 /* MY3DChartDataSource.m */,
 				14D4B64F190D5D3300B99AC8 /* MY3DChartViewController.h */,
 				14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */,
-				143EB95B191295D8004DEBD7 /* MYBarChartViewController.h */,
-				143EB95C191295D8004DEBD7 /* MYBarChartViewController.m */,
 				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
 				14D4B641190D5D3300B99AC8 /* Supporting Files */,
 			);
@@ -278,7 +273,6 @@
 			files = (
 				14D4B651190D5D3300B99AC8 /* MY3DChartViewController.m in Sources */,
 				14D4B64B190D5D3300B99AC8 /* MYAppDelegate.m in Sources */,
-				143EB95D191295D8004DEBD7 /* MYBarChartViewController.m in Sources */,
 				14316B1E190FE8140011B0B5 /* MY3DChartDataSource.m in Sources */,
 				14D4B647190D5D3300B99AC8 /* main.m in Sources */,
 			);
