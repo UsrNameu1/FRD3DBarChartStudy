@@ -21,8 +21,6 @@
 		14D4B65A190D5D3300B99AC8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B659190D5D3300B99AC8 /* XCTest.framework */; };
 		14D4B65B190D5D3300B99AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63A190D5D3300B99AC8 /* Foundation.framework */; };
 		14D4B65C190D5D3300B99AC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63E190D5D3300B99AC8 /* UIKit.framework */; };
-		14D4B664190D5D3300B99AC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D4B662190D5D3300B99AC8 /* InfoPlist.strings */; };
-		14D4B666190D5D3300B99AC8 /* PlotStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B665190D5D3300B99AC8 /* PlotStudyTests.m */; };
 		97347495E03849BFB0AFBC43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E718D5E2803441C853DB365 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,25 +39,22 @@
 		14316B1D190FE8140011B0B5 /* MY3DChartDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY3DChartDataSource.m; sourceTree = "<group>"; };
 		143EB95B191295D8004DEBD7 /* MYBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBarChartViewController.h; sourceTree = "<group>"; };
 		143EB95C191295D8004DEBD7 /* MYBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBarChartViewController.m; sourceTree = "<group>"; };
-		14D4B637190D5D3300B99AC8 /* PlotStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlotStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D4B637190D5D3300B99AC8 /* FRD3DBarChartStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRD3DBarChartStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D4B63A190D5D3300B99AC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14D4B63C190D5D3300B99AC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		14D4B63E190D5D3300B99AC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		14D4B642190D5D3300B99AC8 /* PlotStudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlotStudy-Info.plist"; sourceTree = "<group>"; };
+		14D4B642190D5D3300B99AC8 /* FRD3DBarChartStudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRD3DBarChartStudy-Info.plist"; sourceTree = "<group>"; };
 		14D4B644190D5D3300B99AC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14D4B646190D5D3300B99AC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14D4B648190D5D3300B99AC8 /* PlotStudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlotStudy-Prefix.pch"; sourceTree = "<group>"; };
+		14D4B648190D5D3300B99AC8 /* FRD3DBarChartStudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRD3DBarChartStudy-Prefix.pch"; sourceTree = "<group>"; };
 		14D4B649190D5D3300B99AC8 /* MYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAppDelegate.h; sourceTree = "<group>"; };
 		14D4B64A190D5D3300B99AC8 /* MYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAppDelegate.m; sourceTree = "<group>"; };
 		14D4B64D190D5D3300B99AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14D4B64F190D5D3300B99AC8 /* MY3DChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MY3DChartViewController.h; sourceTree = "<group>"; };
 		14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MY3DChartViewController.m; sourceTree = "<group>"; };
 		14D4B652190D5D3300B99AC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		14D4B658190D5D3300B99AC8 /* PlotStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlotStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D4B658190D5D3300B99AC8 /* FRD3DBarChartStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRD3DBarChartStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D4B659190D5D3300B99AC8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		14D4B661190D5D3300B99AC8 /* PlotStudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlotStudyTests-Info.plist"; sourceTree = "<group>"; };
-		14D4B663190D5D3300B99AC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		14D4B665190D5D3300B99AC8 /* PlotStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlotStudyTests.m; sourceTree = "<group>"; };
 		4E718D5E2803441C853DB365 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				14D4B640190D5D3300B99AC8 /* PlotStudy */,
-				14D4B65F190D5D3300B99AC8 /* PlotStudyTests */,
 				14D4B639190D5D3300B99AC8 /* Frameworks */,
 				14D4B638190D5D3300B99AC8 /* Products */,
 				DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */,
@@ -103,8 +97,8 @@
 		14D4B638190D5D3300B99AC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14D4B637190D5D3300B99AC8 /* PlotStudy.app */,
-				14D4B658190D5D3300B99AC8 /* PlotStudyTests.xctest */,
+				14D4B637190D5D3300B99AC8 /* FRD3DBarChartStudy.app */,
+				14D4B658190D5D3300B99AC8 /* FRD3DBarChartStudyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,28 +136,10 @@
 		14D4B641190D5D3300B99AC8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				14D4B642190D5D3300B99AC8 /* PlotStudy-Info.plist */,
+				14D4B642190D5D3300B99AC8 /* FRD3DBarChartStudy-Info.plist */,
 				14D4B643190D5D3300B99AC8 /* InfoPlist.strings */,
 				14D4B646190D5D3300B99AC8 /* main.m */,
-				14D4B648190D5D3300B99AC8 /* PlotStudy-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		14D4B65F190D5D3300B99AC8 /* PlotStudyTests */ = {
-			isa = PBXGroup;
-			children = (
-				14D4B665190D5D3300B99AC8 /* PlotStudyTests.m */,
-				14D4B660190D5D3300B99AC8 /* Supporting Files */,
-			);
-			path = PlotStudyTests;
-			sourceTree = "<group>";
-		};
-		14D4B660190D5D3300B99AC8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				14D4B661190D5D3300B99AC8 /* PlotStudyTests-Info.plist */,
-				14D4B662190D5D3300B99AC8 /* InfoPlist.strings */,
+				14D4B648190D5D3300B99AC8 /* FRD3DBarChartStudy-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14D4B636190D5D3300B99AC8 /* PlotStudy */ = {
+		14D4B636190D5D3300B99AC8 /* FRD3DBarChartStudy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14D4B669190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "PlotStudy" */;
+			buildConfigurationList = 14D4B669190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "FRD3DBarChartStudy" */;
 			buildPhases = (
 				F92DB5544E8F479BB404FE9E /* Check Pods Manifest.lock */,
 				14D4B633190D5D3300B99AC8 /* Sources */,
@@ -185,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = PlotStudy;
+			name = FRD3DBarChartStudy;
 			productName = PlotStudy;
-			productReference = 14D4B637190D5D3300B99AC8 /* PlotStudy.app */;
+			productReference = 14D4B637190D5D3300B99AC8 /* FRD3DBarChartStudy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		14D4B657190D5D3300B99AC8 /* PlotStudyTests */ = {
+		14D4B657190D5D3300B99AC8 /* FRD3DBarChartStudyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14D4B66C190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "PlotStudyTests" */;
+			buildConfigurationList = 14D4B66C190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "FRD3DBarChartStudyTests" */;
 			buildPhases = (
 				14D4B654190D5D3300B99AC8 /* Sources */,
 				14D4B655190D5D3300B99AC8 /* Frameworks */,
@@ -203,9 +179,9 @@
 			dependencies = (
 				14D4B65E190D5D3300B99AC8 /* PBXTargetDependency */,
 			);
-			name = PlotStudyTests;
+			name = FRD3DBarChartStudyTests;
 			productName = PlotStudyTests;
-			productReference = 14D4B658190D5D3300B99AC8 /* PlotStudyTests.xctest */;
+			productReference = 14D4B658190D5D3300B99AC8 /* FRD3DBarChartStudyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14D4B632190D5D3300B99AC8 /* Build configuration list for PBXProject "PlotStudy" */;
+			buildConfigurationList = 14D4B632190D5D3300B99AC8 /* Build configuration list for PBXProject "FRD3DBarChartStudy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,8 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14D4B636190D5D3300B99AC8 /* PlotStudy */,
-				14D4B657190D5D3300B99AC8 /* PlotStudyTests */,
+				14D4B636190D5D3300B99AC8 /* FRD3DBarChartStudy */,
+				14D4B657190D5D3300B99AC8 /* FRD3DBarChartStudyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D4B664190D5D3300B99AC8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D4B666190D5D3300B99AC8 /* PlotStudyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +296,7 @@
 /* Begin PBXTargetDependency section */
 		14D4B65E190D5D3300B99AC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14D4B636190D5D3300B99AC8 /* PlotStudy */;
+			target = 14D4B636190D5D3300B99AC8 /* FRD3DBarChartStudy */;
 			targetProxy = 14D4B65D190D5D3300B99AC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -342,14 +316,6 @@
 				14D4B64D190D5D3300B99AC8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		14D4B662190D5D3300B99AC8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14D4B663190D5D3300B99AC8 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,10 +354,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -422,10 +388,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -433,12 +399,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlotStudy/PlotStudy-Prefix.pch";
-				INFOPLIST_FILE = "PlotStudy/PlotStudy-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PlotStudy/FRD3DBarChartStudy-Prefix.pch";
+				INFOPLIST_FILE = "PlotStudy/FRD3DBarChartStudy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = FRD3DBarChartStudy;
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,12 +416,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlotStudy/PlotStudy-Prefix.pch";
-				INFOPLIST_FILE = "PlotStudy/PlotStudy-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PlotStudy/FRD3DBarChartStudy-Prefix.pch";
+				INFOPLIST_FILE = "PlotStudy/FRD3DBarChartStudy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = FRD3DBarChartStudy;
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -472,8 +444,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PlotStudyTests/PlotStudyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PlotStudyTests/FRD3DBarChartStudyTests-Info.plist";
+				PRODUCT_NAME = FRD3DBarChartStudyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -490,8 +462,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlotStudy/PlotStudy-Prefix.pch";
-				INFOPLIST_FILE = "PlotStudyTests/PlotStudyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PlotStudyTests/FRD3DBarChartStudyTests-Info.plist";
+				PRODUCT_NAME = FRD3DBarChartStudyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -500,7 +472,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14D4B632190D5D3300B99AC8 /* Build configuration list for PBXProject "PlotStudy" */ = {
+		14D4B632190D5D3300B99AC8 /* Build configuration list for PBXProject "FRD3DBarChartStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14D4B667190D5D3300B99AC8 /* Debug */,
@@ -509,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14D4B669190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "PlotStudy" */ = {
+		14D4B669190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "FRD3DBarChartStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14D4B66A190D5D3300B99AC8 /* Debug */,
@@ -518,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14D4B66C190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "PlotStudyTests" */ = {
+		14D4B66C190D5D3300B99AC8 /* Build configuration list for PBXNativeTarget "FRD3DBarChartStudyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14D4B66D190D5D3300B99AC8 /* Debug */,
