@@ -12,7 +12,7 @@ static const NSUInteger InitialNumberOfColumns = 30;
 
 static const NSUInteger InitialNumberOfRows = 30;
 
-static const CGFloat InitialMaxValue = 10.0f;
+static const CGFloat InitialMaxValue = 1.0f;
 
 @implementation MY3DChartDataSource
 
@@ -53,7 +53,16 @@ static const CGFloat InitialMaxValue = 10.0f;
     CGFloat x = row - self.numberOfRows / 2.0f;
     CGFloat y = column - self.numberOfColumns / 2.0f;
     
-    return (1.0f + cosf(sqrtf(x * x + y * y)));
+    CGFloat sigma = 2.0f;
+    CGFloat sigmaSquare = sigma * sigma;
+    
+    CGFloat avarageX = 2.0f;
+    CGFloat avarageY = -4.0f;
+    
+    CGFloat deltaXSquare = (x - avarageX) * (x - avarageX);
+    CGFloat deltaYSquare = (y - avarageY) * (y - avarageY);
+    
+    return (1.0f / sqrtf(2 * M_PI * sigmaSquare) * exp2f(- (deltaXSquare + deltaYSquare) / 2.0f / sigmaSquare));
 }
 
 
