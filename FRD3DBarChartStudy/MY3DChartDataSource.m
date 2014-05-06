@@ -25,6 +25,9 @@ static const CGFloat InitialMaxValue = 1.0f;
         _numberOfColumns = InitialNumberOfColumns;
         _numberOfRows = InitialNumberOfRows;
         _maxValue = InitialMaxValue;
+        _valueFunction = ^CGFloat(CGFloat x, CGFloat y) {
+            return 1.0f;
+        };
     }
     return self;
 }
@@ -53,17 +56,7 @@ static const CGFloat InitialMaxValue = 1.0f;
     CGFloat x = row - self.numberOfRows / 2.0f;
     CGFloat y = column - self.numberOfColumns / 2.0f;
     
-    CGFloat sigma = 2.0f;
-    CGFloat sigmaSquare = sigma * sigma;
-    
-    CGFloat avarageX = 2.0f;
-    CGFloat avarageY = -4.0f;
-    
-    CGFloat deltaXSquare = (x - avarageX) * (x - avarageX);
-    CGFloat deltaYSquare = (y - avarageY) * (y - avarageY);
-    
-    return (1.0f / sqrtf(2 * M_PI * sigmaSquare) * exp2f(- (deltaXSquare + deltaYSquare) / 2.0f / sigmaSquare));
+    return self.valueFunction(x, y);
 }
-
 
 @end

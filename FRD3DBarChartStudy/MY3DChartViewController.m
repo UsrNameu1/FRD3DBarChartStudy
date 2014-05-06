@@ -44,9 +44,24 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:NSStringFromClass([FRD3DBarChartViewController class])]) {
+        MY3DChartDataSource *chartDataSource = self.chartDataSource;
+        chartDataSource.valueFunction = ^CGFloat(CGFloat x, CGFloat y) {
+            return GaussianDistribution(x, y, 2.0f, -4.0f, 3.0f);
+        };
+        
         self.chartViewController = segue.destinationViewController;
-        self.chartViewController.frd3dBarChartDelegate = self.chartDataSource;
+        self.chartViewController.frd3dBarChartDelegate = chartDataSource;
     }
+}
+
+#pragma mark - Private methods
+
+CGFloat GaussianDistribution(CGFloat x, CGFloat y, CGFloat avarageX, CGFloat avarageY, CGFloat sigma)
+{
+    CGFloat sigmaSquare = sigma * sigma;
+    CGFloat deltaXSquare = (x - avarageX) * (x - avarageX);
+    CGFloat deltaYSquare = (y - avarageY) * (y - avarageY);
+    return 1.0f / sqrtf(2 * M_PI * sigmaSquare) * exp2f(- (deltaXSquare + deltaYSquare) / 2.0f / sigmaSquare);
 }
 
 @end
