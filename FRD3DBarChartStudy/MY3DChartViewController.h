@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  3Dチャートを表示するための画面クラスです。
+ */
 @interface MY3DChartViewController : UIViewController
 
 @end

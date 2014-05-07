@@ -14,8 +14,14 @@
 
 @interface MY3DChartViewController ()
 
+/**
+ *  コンテナビューに入れられたチャート表示のためのViewControllerです。
+ */
 @property (weak, nonatomic) FRD3DBarChartViewController *chartViewController;
 
+/**
+ *  チャート表示に必要なデータを提供するデータソースオブジェクトです。
+ */
 @property (nonatomic) id<FRD3DBarChartViewControllerDelegate> chartDataSource;
 
 @end
@@ -56,6 +62,17 @@
 
 #pragma mark - Private methods
 
+/**
+ *  ガウシアン（正規分布）を返す関数です
+ *
+ *  @param x        xの入力値
+ *  @param y        yの入力値
+ *  @param avarageX xの平均値
+ *  @param avarageY yの平均値
+ *  @param sigma    分散
+ *
+ *  @return ガウシアンの値
+ */
 CGFloat GaussianDistribution(CGFloat x, CGFloat y, CGFloat avarageX, CGFloat avarageY, CGFloat sigma)
 {
     CGFloat sigmaSquare = sigma * sigma;

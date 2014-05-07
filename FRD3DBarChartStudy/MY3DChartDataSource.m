@@ -8,10 +8,19 @@
 
 #import "MY3DChartDataSource.h"
 
+/**
+ *  列数の初期値です。
+ */
 static const NSUInteger InitialNumberOfColumns = 30;
 
+/**
+ *  行数の初期値です。
+ */
 static const NSUInteger InitialNumberOfRows = 30;
 
+/**
+ *  表示最大値の初期値です。
+ */
 static const CGFloat InitialMaxValue = 1.0f;
 
 @implementation MY3DChartDataSource

@@ -11,7 +11,7 @@
 #import "FRD3DBarChartViewController.h"
 
 /**
- *  x, y に対応する値を返す関数のブロックです
+ *  x, y に対応する値を返す関数のブロックです。
  *
  *  @param x xの入力値
  *  @param y yの入力値
