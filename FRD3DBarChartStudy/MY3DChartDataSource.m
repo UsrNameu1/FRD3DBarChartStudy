@@ -68,4 +68,20 @@ static const CGFloat InitialMaxValue = 1.0f;
     return self.valueFunction(x, y);
 }
 
+- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController legendForRow:(int)row
+{
+    CGFloat x = row - self.numberOfRows / 2.0f;
+    NSNumber *xNumber = (NSInteger)x % 5 == 0 ?
+    @(x) : nil;
+    return [xNumber stringValue];
+}
+
+- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController legendForColumn:(int)column
+{
+    CGFloat y = column - self.numberOfColumns / 2.0f;
+    NSNumber *yNumber = (NSInteger)y % 5 == 0 ?
+    @(y) : nil;
+    return [yNumber stringValue];
+}
+
 @end
