@@ -8,6 +8,8 @@
 
 #import "MY3DChartDataSource.h"
 
+#import "UIColor+Hex.h"
+
 /**
  *  列数の初期値です。
  */
@@ -36,7 +38,7 @@ static const CGFloat InitialMaxValue = 1.0f;
         _maxValue = InitialMaxValue;
         _valueFunction = ^CGFloat(CGFloat x, CGFloat y) {
             return 1.0f;
-        };
+        };        
     }
     return self;
 }
@@ -82,6 +84,17 @@ static const CGFloat InitialMaxValue = 1.0f;
     NSNumber *yNumber = (NSInteger)y % 5 == 0 ?
     @(y) : nil;
     return [yNumber stringValue];
+}
+
+- (UIColor *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController
+                        colorForBarAtRow:(int)row
+                                  column:(int)column
+{
+    CGFloat x = row - self.numberOfRows / 2.0f;
+    CGFloat y = column - self.numberOfColumns / 2.0f;
+    CGFloat colorDepth = self.valueFunction(x, y) / self.maxValue;
+    NSUInteger colorValue = (NSUInteger)(0xff * colorDepth) * 0x10000 + 0x0000ff * (1 - colorDepth);
+    return [UIColor colorWithHexInteger:colorValue];
 }
 
 @end

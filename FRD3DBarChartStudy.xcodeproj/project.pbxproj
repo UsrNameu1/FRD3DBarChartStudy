@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141B4871191E75E100ABD0A3 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 141B4870191E75E100ABD0A3 /* UIColor+Hex.m */; };
 		14316B1E190FE8140011B0B5 /* MY3DChartDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 14316B1D190FE8140011B0B5 /* MY3DChartDataSource.m */; };
 		14D4B63B190D5D3300B99AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63A190D5D3300B99AC8 /* Foundation.framework */; };
 		14D4B63D190D5D3300B99AC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63C190D5D3300B99AC8 /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141B486F191E75E100ABD0A3 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		141B4870191E75E100ABD0A3 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		14316B1C190FE8140011B0B5 /* MY3DChartDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY3DChartDataSource.h; sourceTree = "<group>"; };
 		14316B1D190FE8140011B0B5 /* MY3DChartDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY3DChartDataSource.m; sourceTree = "<group>"; };
 		14D4B637190D5D3300B99AC8 /* FRD3DBarChartStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRD3DBarChartStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +127,8 @@
 				14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */,
 				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
 				14D4B641190D5D3300B99AC8 /* Supporting Files */,
+				141B486F191E75E100ABD0A3 /* UIColor+Hex.h */,
+				141B4870191E75E100ABD0A3 /* UIColor+Hex.m */,
 			);
 			path = FRD3DBarChartStudy;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D4B651190D5D3300B99AC8 /* MY3DChartViewController.m in Sources */,
+				141B4871191E75E100ABD0A3 /* UIColor+Hex.m in Sources */,
 				14D4B64B190D5D3300B99AC8 /* MYAppDelegate.m in Sources */,
 				14316B1E190FE8140011B0B5 /* MY3DChartDataSource.m in Sources */,
 				14D4B647190D5D3300B99AC8 /* main.m in Sources */,

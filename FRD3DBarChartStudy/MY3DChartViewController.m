@@ -52,8 +52,9 @@
     if ([segue.identifier isEqualToString:NSStringFromClass([FRD3DBarChartViewController class])]) {
         MY3DChartDataSource *chartDataSource = self.chartDataSource;
         chartDataSource.valueFunction = ^CGFloat(CGFloat x, CGFloat y) {
-            return GaussianDistribution(x, y, 2.0f, -4.0f, 3.0f);
+            return GaussianDistribution(x, y, 2.0f, -4.0f, 4.0f);
         };
+        chartDataSource.maxValue = 0.20f;
         
         self.chartViewController = segue.destinationViewController;
         self.chartViewController.frd3dBarChartDelegate = chartDataSource;
