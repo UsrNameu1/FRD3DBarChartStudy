@@ -1,64 +1,37 @@
 //
-//  MY3DChartDataSource.m
+//  MYGaussianDistributionDataSource.m
 //  PlotStudy
 //
 //  Created by adachi yuichi on 2014/04/29.
 //  Copyright (c) 2014年 yad. All rights reserved.
 //
 
-#import "MY3DChartDataSource.h"
+#import "MYGaussianDistributionDataSource.h"
 
 #import "UIColor+Hex.h"
 
-/**
- *  列数の初期値です。
- */
-static const NSUInteger InitialNumberOfColumns = 30;
+static const float InitialAvarageX = 2.0f;
 
-/**
- *  行数の初期値です。
- */
-static const NSUInteger InitialNumberOfRows = 30;
+static const float InitialAvarageY = -4.0f;
 
-/**
- *  表示最大値の初期値です。
- */
-static const CGFloat InitialMaxValue = 1.0f;
+static const float InitialSigma = 4.0f;
 
-@implementation MY3DChartDataSource
+@implementation MYGaussianDistributionDataSource
 
 #pragma mark - Lifecycle methods
 
 - (instancetype)init
 {
     self = [super init];
-    if (self) {
-        _numberOfColumns = InitialNumberOfColumns;
-        _numberOfRows = InitialNumberOfRows;
-        _maxValue = InitialMaxValue;
-        _valueFunction = ^CGFloat(CGFloat x, CGFloat y) {
-            return 1.0f;
-        };        
+    if (self != nil) {
+        _avarageX = InitialAvarageX;
+        _avarageY = InitialAvarageY;
+        _sigma = InitialSigma;
     }
     return self;
 }
 
 #pragma mark - FRD3DBarChartViewControllerDelegate
-
-- (int)frd3DBarChartViewControllerNumberColumns:(FRD3DBarChartViewController *)frd3DBarChartViewController
-{
-    return (int)self.numberOfColumns;
-}
-
-- (int)frd3DBarChartViewControllerNumberRows:(FRD3DBarChartViewController *)frd3DBarChartViewController
-{
-    return (int)self.numberOfRows;
-}
-
-- (float)frd3DBarChartViewControllerMaxValue:(FRD3DBarChartViewController *)frd3DBarChartViewController
-{
-    return self.maxValue;
-}
 
 - (float)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController
                     valueForBarAtRow:(int)row
@@ -67,7 +40,7 @@ static const CGFloat InitialMaxValue = 1.0f;
     CGFloat x = row - self.numberOfRows / 2.0f;
     CGFloat y = column - self.numberOfColumns / 2.0f;
     
-    return self.valueFunction(x, y);
+    return GaussianDistribution(x, y, self.avarageX, self.avarageY, self.sigma);
 }
 
 - (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController legendForRow:(int)row
@@ -92,9 +65,30 @@ static const CGFloat InitialMaxValue = 1.0f;
 {
     CGFloat x = row - self.numberOfRows / 2.0f;
     CGFloat y = column - self.numberOfColumns / 2.0f;
-    CGFloat colorDepth = self.valueFunction(x, y) / self.maxValue;
+    CGFloat colorDepth = GaussianDistribution(x, y, self.avarageX, self.avarageY, self.sigma) / self.maxValue;
     NSUInteger colorValue = (NSUInteger)(0xff * colorDepth) * 0x10000 + 0x0000ff * (1 - colorDepth);
     return [UIColor colorWithHexInteger:colorValue];
+}
+
+#pragma mark - Private methods
+
+/**
+ *  ガウシアンを返す関数です
+ *
+ *  @param x        xの入力値
+ *  @param y        yの入力値
+ *  @param avarageX xの平均値
+ *  @param avarageY yの平均値
+ *  @param sigma    分散
+ *
+ *  @return ガウシアンの値
+ */
+CGFloat GaussianDistribution(CGFloat x, CGFloat y, CGFloat avarageX, CGFloat avarageY, CGFloat sigma)
+{
+    CGFloat sigmaSquare = sigma * sigma;
+    CGFloat deltaXSquare = (x - avarageX) * (x - avarageX);
+    CGFloat deltaYSquare = (y - avarageY) * (y - avarageY);
+    return 1.0f / sqrtf(2 * M_PI * sigmaSquare) * exp2f(- (deltaXSquare + deltaYSquare) / 2.0f / sigmaSquare);
 }
 
 @end
