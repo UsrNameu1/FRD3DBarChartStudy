@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  １６進数とUIColorを合わせて活用するためのカテゴリです。
+ */
 @interface UIColor (Hex)
 
 /**

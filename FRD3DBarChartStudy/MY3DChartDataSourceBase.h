@@ -10,6 +10,9 @@
 
 #import "FRD3DBarChartViewController.h"
 
+/**
+ *  3Dチャートの基底クラスです。
+ */
 @interface MY3DChartDataSourceBase : NSObject <FRD3DBarChartViewControllerDelegate>
 
 /**
