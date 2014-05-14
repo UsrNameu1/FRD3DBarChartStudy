@@ -24,6 +24,10 @@
  */
 @property (nonatomic) id<FRD3DBarChartViewControllerDelegate> chartDataSource;
 
+- (IBAction)avarageXSliderValueChanged:(UISlider *)sender;
+
+- (IBAction)avarageYSliderVallueChanged:(UISlider *)sender;
+
 @end
 
 @implementation MY3DChartViewController
@@ -58,4 +62,9 @@
     }
 }
 
+- (IBAction)avarageXSliderValueChanged:(UISlider *)sender {
+}
+
+- (IBAction)avarageYSliderVallueChanged:(UISlider *)sender {
+}
 @end
