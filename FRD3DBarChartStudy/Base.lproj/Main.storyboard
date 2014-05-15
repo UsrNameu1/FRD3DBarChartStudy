@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Chart View Controller - Item 1-->
+        <!--Gaussian Chart View Controller - Item 1-->
         <scene sceneID="dG2-3h-wJH">
             <objects>
-                <viewController id="taf-Ik-amb" customClass="MY3DChartViewController" sceneMemberID="viewController">
+                <viewController id="taf-Ik-amb" customClass="MYGaussianChartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="psQ-xa-Qnc"/>
                         <viewControllerLayoutGuide type="bottom" id="x89-o5-Tr2"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="320" y="296"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--Poisson Chart View Controller - Item 2-->
         <scene sceneID="93w-v1-fWK">
             <objects>
-                <viewController id="mae-qk-TQi" sceneMemberID="viewController">
+                <viewController id="mae-qk-TQi" customClass="MYPoissonChartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MHZ-RA-0Pn"/>
                         <viewControllerLayoutGuide type="bottom" id="9ee-c7-zFr"/>
@@ -134,6 +134,16 @@
                     <view key="view" contentMode="scaleToFill" id="D2i-PT-qDR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akN-Dv-aQ0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="kGt-0r-adm" kind="embed" identifier="FRD3DBarChartViewController" id="JDg-ct-k1H"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="PAy-BA-LdS"/>
@@ -141,6 +151,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDf-ql-oRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="854" y="622"/>
+        </scene>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="Vay-c0-w0v">
+            <objects>
+                <viewController id="kGt-0r-adm" customClass="FRD3DBarChartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0y9-HW-l4I"/>
+                        <viewControllerLayoutGuide type="bottom" id="q0e-e7-Cdd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aly-hp-ELP" customClass="GLKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyY-Mx-CFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="622"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -16,7 +16,7 @@
 		14D4B647190D5D3300B99AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B646190D5D3300B99AC8 /* main.m */; };
 		14D4B64B190D5D3300B99AC8 /* MYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B64A190D5D3300B99AC8 /* MYAppDelegate.m */; };
 		14D4B64E190D5D3300B99AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D4B64C190D5D3300B99AC8 /* Main.storyboard */; };
-		14D4B651190D5D3300B99AC8 /* MY3DChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */; };
+		14D4B651190D5D3300B99AC8 /* MYGaussianChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B650190D5D3300B99AC8 /* MYGaussianChartViewController.m */; };
 		14D4B653190D5D3300B99AC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D4B652190D5D3300B99AC8 /* Images.xcassets */; };
 		14D4B65A190D5D3300B99AC8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B659190D5D3300B99AC8 /* XCTest.framework */; };
 		14D4B65B190D5D3300B99AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63A190D5D3300B99AC8 /* Foundation.framework */; };
@@ -25,6 +25,8 @@
 		97347495E03849BFB0AFBC43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E718D5E2803441C853DB365 /* libPods.a */; };
 		F7D6224F1924B7D600361849 /* DataSet.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D6224E1924B7D600361849 /* DataSet.json */; };
 		F7D622521924B83800361849 /* MYPoissonDistributionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */; };
+		F7D622551924BB0300361849 /* NSBundle+MYBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D622541924BB0300361849 /* NSBundle+MYBundle.m */; };
+		F7D622581924BE7200361849 /* MYPoissonChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D622571924BE7200361849 /* MYPoissonChartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,8 @@
 		14D4B649190D5D3300B99AC8 /* MYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAppDelegate.h; sourceTree = "<group>"; };
 		14D4B64A190D5D3300B99AC8 /* MYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAppDelegate.m; sourceTree = "<group>"; };
 		14D4B64D190D5D3300B99AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14D4B64F190D5D3300B99AC8 /* MY3DChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MY3DChartViewController.h; sourceTree = "<group>"; };
-		14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MY3DChartViewController.m; sourceTree = "<group>"; };
+		14D4B64F190D5D3300B99AC8 /* MYGaussianChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGaussianChartViewController.h; sourceTree = "<group>"; };
+		14D4B650190D5D3300B99AC8 /* MYGaussianChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGaussianChartViewController.m; sourceTree = "<group>"; };
 		14D4B652190D5D3300B99AC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14D4B658190D5D3300B99AC8 /* FRD3DBarChartStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRD3DBarChartStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D4B659190D5D3300B99AC8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,6 +67,10 @@
 		F7D6224E1924B7D600361849 /* DataSet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataSet.json; sourceTree = "<group>"; };
 		F7D622501924B83800361849 /* MYPoissonDistributionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPoissonDistributionDataSource.h; sourceTree = "<group>"; };
 		F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPoissonDistributionDataSource.m; sourceTree = "<group>"; };
+		F7D622531924BB0300361849 /* NSBundle+MYBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MYBundle.h"; sourceTree = "<group>"; };
+		F7D622541924BB0300361849 /* NSBundle+MYBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MYBundle.m"; sourceTree = "<group>"; };
+		F7D622561924BE7200361849 /* MYPoissonChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPoissonChartViewController.h; sourceTree = "<group>"; };
+		F7D622571924BE7200361849 /* MYPoissonChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPoissonChartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +141,14 @@
 				F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */,
 				14F60F7919210FE000DB1AC2 /* MY3DChartDataSourceBase.h */,
 				14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */,
-				14D4B64F190D5D3300B99AC8 /* MY3DChartViewController.h */,
-				14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */,
+				14D4B64F190D5D3300B99AC8 /* MYGaussianChartViewController.h */,
+				14D4B650190D5D3300B99AC8 /* MYGaussianChartViewController.m */,
+				F7D622561924BE7200361849 /* MYPoissonChartViewController.h */,
+				F7D622571924BE7200361849 /* MYPoissonChartViewController.m */,
 				141B486F191E75E100ABD0A3 /* UIColor+Hex.h */,
 				141B4870191E75E100ABD0A3 /* UIColor+Hex.m */,
+				F7D622531924BB0300361849 /* NSBundle+MYBundle.h */,
+				F7D622541924BB0300361849 /* NSBundle+MYBundle.m */,
 				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
 				14D4B641190D5D3300B99AC8 /* Supporting Files */,
 				F7D6224E1924B7D600361849 /* DataSet.json */,
@@ -291,9 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D622521924B83800361849 /* MYPoissonDistributionDataSource.m in Sources */,
-				14D4B651190D5D3300B99AC8 /* MY3DChartViewController.m in Sources */,
+				14D4B651190D5D3300B99AC8 /* MYGaussianChartViewController.m in Sources */,
+				F7D622581924BE7200361849 /* MYPoissonChartViewController.m in Sources */,
 				141B4871191E75E100ABD0A3 /* UIColor+Hex.m in Sources */,
 				14D4B64B190D5D3300B99AC8 /* MYAppDelegate.m in Sources */,
+				F7D622551924BB0300361849 /* NSBundle+MYBundle.m in Sources */,
 				14F60F7B19210FE000DB1AC2 /* MY3DChartDataSourceBase.m in Sources */,
 				14316B1E190FE8140011B0B5 /* MYGaussianDistributionDataSource.m in Sources */,
 				14D4B647190D5D3300B99AC8 /* main.m in Sources */,

@@ -1,12 +1,12 @@
 //
-//  MYViewController.m
+//  MYGaussianChartViewController.m
 //  PlotStudy
 //
 //  Created by adachi yuichi on 2014/04/28.
 //  Copyright (c) 2014年 yad. All rights reserved.
 //
 
-#import "MY3DChartViewController.h"
+#import "MYGaussianChartViewController.h"
 
 #import "MYGaussianDistributionDataSource.h"
 
@@ -18,7 +18,7 @@ static NSString *const SigmaLabelFormatString = @"σ:%.1f";
 
 static const NSTimeInterval AnimationTimeInterval = 2.0f;
 
-@interface MY3DChartViewController ()
+@interface MYGaussianChartViewController ()
 
 /**
  *  コンテナビューに入れられたチャート表示のためのViewControllerです。
@@ -45,7 +45,7 @@ static const NSTimeInterval AnimationTimeInterval = 2.0f;
 
 @end
 
-@implementation MY3DChartViewController
+@implementation MYGaussianChartViewController
 
 #pragma mark - Lifecycle methods
 
