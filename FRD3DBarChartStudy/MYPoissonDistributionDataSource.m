@@ -29,6 +29,17 @@ static const CGFloat InitialLambda = 3.5f;
     return self;
 }
 
-
-
+//- (float)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController valueForBarAtRow:(int)row column:(int)column
+//{
+//    BOOL valueForDataSet = row == 1;
+//    
+//}
+//
+//
+//#pragma mark - Private methods
+//
+//CGFloat PoissonDistribution(NSInteger x, CGFloat lambda)
+//{
+//    return powf(lambda, x) * exp2f( - lambda ) /
+//}
 @end
