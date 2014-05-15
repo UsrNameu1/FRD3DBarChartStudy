@@ -23,6 +23,8 @@
 		14D4B65C190D5D3300B99AC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63E190D5D3300B99AC8 /* UIKit.framework */; };
 		14F60F7B19210FE000DB1AC2 /* MY3DChartDataSourceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */; };
 		97347495E03849BFB0AFBC43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E718D5E2803441C853DB365 /* libPods.a */; };
+		F7D6224F1924B7D600361849 /* DataSet.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D6224E1924B7D600361849 /* DataSet.json */; };
+		F7D622521924B83800361849 /* MYPoissonDistributionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY3DChartDataSourceBase.m; sourceTree = "<group>"; };
 		4E718D5E2803441C853DB365 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F7D6224E1924B7D600361849 /* DataSet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataSet.json; sourceTree = "<group>"; };
+		F7D622501924B83800361849 /* MYPoissonDistributionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPoissonDistributionDataSource.h; sourceTree = "<group>"; };
+		F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPoissonDistributionDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,14 +131,17 @@
 				14D4B64C190D5D3300B99AC8 /* Main.storyboard */,
 				14316B1C190FE8140011B0B5 /* MYGaussianDistributionDataSource.h */,
 				14316B1D190FE8140011B0B5 /* MYGaussianDistributionDataSource.m */,
+				F7D622501924B83800361849 /* MYPoissonDistributionDataSource.h */,
+				F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */,
 				14F60F7919210FE000DB1AC2 /* MY3DChartDataSourceBase.h */,
 				14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */,
 				14D4B64F190D5D3300B99AC8 /* MY3DChartViewController.h */,
 				14D4B650190D5D3300B99AC8 /* MY3DChartViewController.m */,
-				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
-				14D4B641190D5D3300B99AC8 /* Supporting Files */,
 				141B486F191E75E100ABD0A3 /* UIColor+Hex.h */,
 				141B4870191E75E100ABD0A3 /* UIColor+Hex.m */,
+				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
+				14D4B641190D5D3300B99AC8 /* Supporting Files */,
+				F7D6224E1924B7D600361849 /* DataSet.json */,
 			);
 			path = FRD3DBarChartStudy;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 			files = (
 				14D4B653190D5D3300B99AC8 /* Images.xcassets in Resources */,
 				14D4B645190D5D3300B99AC8 /* InfoPlist.strings in Resources */,
+				F7D6224F1924B7D600361849 /* DataSet.json in Resources */,
 				14D4B64E190D5D3300B99AC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D622521924B83800361849 /* MYPoissonDistributionDataSource.m in Sources */,
 				14D4B651190D5D3300B99AC8 /* MY3DChartViewController.m in Sources */,
 				141B4871191E75E100ABD0A3 /* UIColor+Hex.m in Sources */,
 				14D4B64B190D5D3300B99AC8 /* MYAppDelegate.m in Sources */,

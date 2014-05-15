@@ -12,6 +12,12 @@
 
 #import "FRD3DBarChartViewController.h"
 
+static NSString *const AverageXLabelFormatString = @"avX:%.1f";
+static NSString *const AverageYLabelFormatString = @"avY:%.1f";
+static NSString *const SigmaLabelFormatString = @"σ:%.1f";
+
+static const NSTimeInterval AnimationTimeInterval = 2.0f;
+
 @interface MY3DChartViewController ()
 
 /**
@@ -24,9 +30,18 @@
  */
 @property (nonatomic) id<FRD3DBarChartViewControllerDelegate> chartDataSource;
 
-- (IBAction)avarageXSliderValueChanged:(UISlider *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *averageXLabel;
+@property (weak, nonatomic) IBOutlet UILabel *averageYLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sigmaLabel;
 
-- (IBAction)avarageYSliderVallueChanged:(UISlider *)sender;
+- (IBAction)averageXSliderValueChanged:(UISlider *)sender;
+- (IBAction)averageXSliderDidTouchUp:(UISlider *)sender;
+
+- (IBAction)averageYSliderValueChanged:(UISlider *)sender;
+- (IBAction)averageYSliderDidTouchUp:(UISlider *)sender;
+
+- (IBAction)sigmaSliderValueChanged:(UISlider *)sender;
+- (IBAction)sigmaSliderDidTouchUp:(UISlider *)sender;
 
 @end
 
@@ -62,9 +77,57 @@
     }
 }
 
-- (IBAction)avarageXSliderValueChanged:(UISlider *)sender {
+#pragma mark - Handler methods
+
+- (IBAction)averageXSliderValueChanged:(UISlider *)sender
+{
+    self.averageXLabel.text =
+    [NSString stringWithFormat:AverageXLabelFormatString, sender.value];
 }
 
-- (IBAction)avarageYSliderVallueChanged:(UISlider *)sender {
+- (IBAction)averageYSliderValueChanged:(UISlider *)sender
+{
+    self.averageYLabel.text =
+    [NSString stringWithFormat:AverageYLabelFormatString, sender.value];
 }
+
+- (IBAction)sigmaSliderValueChanged:(UISlider *)sender
+{
+    self.sigmaLabel.text =
+    [NSString stringWithFormat:SigmaLabelFormatString, sender.value];
+}
+
+
+- (IBAction)averageYSliderDidTouchUp:(UISlider *)sender
+{
+    MYGaussianDistributionDataSource *dataSource = self.chartDataSource;
+    dataSource.averageX = sender.value;
+    
+    // データソースの値に応じてグラフをアニメーション付きでアップデートします。
+    [self.chartViewController updateChartAnimated:YES
+                                animationDuration:AnimationTimeInterval
+                                          options:kUpdateChartOptionsDoNotUpdateValueLegend];
+}
+
+- (IBAction)averageXSliderDidTouchUp:(UISlider *)sender
+{
+    MYGaussianDistributionDataSource *dataSource = self.chartDataSource;
+    dataSource.averageY = sender.value;
+    
+    // データソースの値に応じてグラフをアニメーション付きでアップデートします。
+    [self.chartViewController updateChartAnimated:YES
+                                animationDuration:AnimationTimeInterval
+                                          options:kUpdateChartOptionsDoNotUpdateValueLegend];
+}
+
+- (IBAction)sigmaSliderDidTouchUp:(UISlider *)sender
+{
+    MYGaussianDistributionDataSource *dataSource = self.chartDataSource;
+    dataSource.sigma = sender.value;
+    
+    [self.chartViewController updateChartAnimated:YES
+                                animationDuration:AnimationTimeInterval
+                                          options:kUpdateChartOptionsDoNotUpdateValueLegend];
+}
+
 @end

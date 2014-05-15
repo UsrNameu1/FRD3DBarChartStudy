@@ -45,16 +45,37 @@ static const CGFloat InitialMaxValue = 1.0f;
     return self;
 }
 
+/**
+ *  3Dチャートのバーの列の個数を決定できます。
+ *
+ *  @param frd3DBarChartViewController 3Dチャート表示のためのViewController
+ *
+ *  @return バーの列の個数
+ */
 - (int)frd3DBarChartViewControllerNumberColumns:(FRD3DBarChartViewController *)frd3DBarChartViewController
 {
     return (int)self.numberOfColumns;
 }
 
+/**
+ *  3Dチャートのバーの行の個数を決定できます。
+ *
+ *  @param frd3DBarChartViewController 3Dチャート表示のためのViewController
+ *
+ *  @return バーの行の個数
+ */
 - (int)frd3DBarChartViewControllerNumberRows:(FRD3DBarChartViewController *)frd3DBarChartViewController
 {
     return (int)self.numberOfRows;
 }
 
+/**
+ *  3Dチャートの表示するバーの最大値を決定できます。
+ *
+ *  @param frd3DBarChartViewController 3Dチャート表示のためのViewController
+ *
+ *  @return バーの最大値
+ */
 - (float)frd3DBarChartViewControllerMaxValue:(FRD3DBarChartViewController *)frd3DBarChartViewController
 {
     return (float)self.maxValue;

@@ -11,19 +11,19 @@
 #import "MY3DChartDataSourceBase.h"
 
 /**
- *  3Dチャート表示のためのデータソースクラスです。
+ *  正規分布3Dチャート表示のためのデータソースクラスです。
  */
 @interface MYGaussianDistributionDataSource : MY3DChartDataSourceBase
 
 /**
  *  Xの平均値です
  */
-@property (nonatomic) float avarageX;
+@property (nonatomic) float averageX;
 
 /**
  *  Yの平均値です
  */
-@property (nonatomic) float avarageY;
+@property (nonatomic) float averageY;
 
 /**
  *  分散です
