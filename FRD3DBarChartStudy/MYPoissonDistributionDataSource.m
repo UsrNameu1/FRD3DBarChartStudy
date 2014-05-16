@@ -62,21 +62,6 @@ static const int NumberOfLines = 3;
     @"DataSet" : @"Poisson Distribution";
 }
 
-- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController
-                          legendForColumn:(int)column
-{
-    CGFloat count = column;
-    return @(count).stringValue;
-}
-
-- (UIColor *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController
-                        colorForBarAtRow:(int)row
-                                  column:(int)column
-{
-    BOOL valueForDataSet = row == 1;
-    return valueForDataSet ?
-    [UIColor blueColor] : [UIColor greenColor];
-}
 
 /**
  *  3Dチャートの底を除いた線の数を決定します。

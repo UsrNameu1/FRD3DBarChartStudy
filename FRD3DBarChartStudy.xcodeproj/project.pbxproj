@@ -135,25 +135,11 @@
 		14D4B640190D5D3300B99AC8 /* FRD3DBarChartStudy */ = {
 			isa = PBXGroup;
 			children = (
+				F742A22D19260804008F98DF /* Utils */,
+				F742A22E19260817008F98DF /* Views */,
 				14D4B649190D5D3300B99AC8 /* MYAppDelegate.h */,
 				14D4B64A190D5D3300B99AC8 /* MYAppDelegate.m */,
 				14D4B64C190D5D3300B99AC8 /* Main.storyboard */,
-				14316B1C190FE8140011B0B5 /* MYGaussianDistributionDataSource.h */,
-				14316B1D190FE8140011B0B5 /* MYGaussianDistributionDataSource.m */,
-				F7D622501924B83800361849 /* MYPoissonDistributionDataSource.h */,
-				F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */,
-				14F60F7919210FE000DB1AC2 /* MY3DChartDataSourceBase.h */,
-				14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */,
-				14D4B64F190D5D3300B99AC8 /* MYGaussianChartViewController.h */,
-				14D4B650190D5D3300B99AC8 /* MYGaussianChartViewController.m */,
-				F7D622561924BE7200361849 /* MYPoissonChartViewController.h */,
-				F7D622571924BE7200361849 /* MYPoissonChartViewController.m */,
-				141B486F191E75E100ABD0A3 /* UIColor+Hex.h */,
-				141B4870191E75E100ABD0A3 /* UIColor+Hex.m */,
-				F7D622531924BB0300361849 /* NSBundle+MYBundle.h */,
-				F7D622541924BB0300361849 /* NSBundle+MYBundle.m */,
-				F742A2291925F2AF008F98DF /* NSArray+Histgram.h */,
-				F742A22A1925F2AF008F98DF /* NSArray+Histgram.m */,
 				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
 				14D4B641190D5D3300B99AC8 /* Supporting Files */,
 				F7D6224E1924B7D600361849 /* DataSet.json */,
@@ -170,6 +156,44 @@
 				14D4B648190D5D3300B99AC8 /* FRD3DBarChartStudy-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F742A22C192607F7008F98DF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				14F60F7919210FE000DB1AC2 /* MY3DChartDataSourceBase.h */,
+				14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */,
+				14316B1C190FE8140011B0B5 /* MYGaussianDistributionDataSource.h */,
+				14316B1D190FE8140011B0B5 /* MYGaussianDistributionDataSource.m */,
+				F7D622501924B83800361849 /* MYPoissonDistributionDataSource.h */,
+				F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		F742A22D19260804008F98DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				141B486F191E75E100ABD0A3 /* UIColor+Hex.h */,
+				141B4870191E75E100ABD0A3 /* UIColor+Hex.m */,
+				F7D622531924BB0300361849 /* NSBundle+MYBundle.h */,
+				F7D622541924BB0300361849 /* NSBundle+MYBundle.m */,
+				F742A2291925F2AF008F98DF /* NSArray+Histgram.h */,
+				F742A22A1925F2AF008F98DF /* NSArray+Histgram.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F742A22E19260817008F98DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F742A22C192607F7008F98DF /* DataSources */,
+				14D4B64F190D5D3300B99AC8 /* MYGaussianChartViewController.h */,
+				14D4B650190D5D3300B99AC8 /* MYGaussianChartViewController.m */,
+				F7D622561924BE7200361849 /* MYPoissonChartViewController.h */,
+				F7D622571924BE7200361849 /* MYPoissonChartViewController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
