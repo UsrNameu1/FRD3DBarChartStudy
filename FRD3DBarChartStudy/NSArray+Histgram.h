@@ -14,14 +14,14 @@
 @interface NSArray (Histgram)
 
 /**
- *  メッセージ受信オブジェクトがNSNumberのみで構成されるNSArrayに対して使用可能です。
+ *  メッセージ受信オブジェクトが正のInt値のNSNumberのみで構成されるNSArrayに対して使用可能です。
  *
  *  @return ヒストグラムNSArray
  */
 - (NSArray *)histgramArray;
 
 /**
- *  メッセージ受信オブジェクトがNSNumberのみで構成されるNSArrayに対して平均値を導出します。
+ *  メッセージ受信オブジェクトが正のInt値のNSNumberのみで構成されるNSArrayに対して平均値を導出します。
  *
  *  @return 平均値
  */
