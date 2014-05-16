@@ -32,10 +32,11 @@ static const CGFloat InitialMaxValue = 1.0f;
         
         if ([self isMemberOfClass:[MY3DChartDataSourceBase class]]) {
             @throw
-            [NSException exceptionWithName:NSInternalInconsistencyException
-                                    reason:[NSString stringWithFormat:@"You can't instantiate this abstract class : %@",
-                                            NSStringFromClass([self class])]
-                                  userInfo:nil];
+            [NSException
+             exceptionWithName:NSInternalInconsistencyException
+             reason:[NSString stringWithFormat:@"You can't instantiate this abstract class : %@",
+                     NSStringFromClass([self class])]
+           userInfo:nil];
         }
         
         _numberOfColumns = InitialNumberOfColumns;
@@ -86,9 +87,11 @@ static const CGFloat InitialMaxValue = 1.0f;
                               column:(int)column
 {
     @throw
-    [NSException exceptionWithName:NSInternalInconsistencyException
-                            reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
-                          userInfo:nil];
+    [NSException
+     exceptionWithName:NSInternalInconsistencyException
+     reason:[NSString stringWithFormat:@"You must override %@ in a subclass",
+             NSStringFromSelector(_cmd)]
+     userInfo:nil];
 }
 
 @end

@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  ファイルから基本データを生成するためのカテゴリです。
+ */
 @interface NSBundle (MYBundle)
 
+/**
+ *  DataSet.jsonの内容をNSArrayとして生成します。
+ *
+ *  @return NSArray
+ */
 - (NSArray *)myDataSetArray;
 
 @end

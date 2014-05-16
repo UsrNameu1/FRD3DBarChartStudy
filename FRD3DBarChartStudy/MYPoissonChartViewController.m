@@ -51,11 +51,13 @@
 {
     if ([segue.identifier isEqualToString:NSStringFromClass([FRD3DBarChartViewController class])]) {
         
-//        MYGaussianDistributionDataSource *chartDataSource = self.chartDataSource;
-//        chartDataSource.maxValue = 0.20f;
-//        
-//        self.chartViewController = segue.destinationViewController;
-//        self.chartViewController.frd3dBarChartDelegate = chartDataSource;
+        MYPoissonDistributionDataSource *chartDataSource = self.chartDataSource;
+        chartDataSource.maxValue = 0.3f;
+        
+        self.chartViewController = segue.destinationViewController;
+        // グラフのバーを円柱状にするかどうか決定します。
+        self.chartViewController.useCylinders = YES;
+        self.chartViewController.frd3dBarChartDelegate = chartDataSource;
     }
 }
 

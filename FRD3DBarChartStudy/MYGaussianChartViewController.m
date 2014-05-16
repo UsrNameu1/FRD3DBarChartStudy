@@ -125,6 +125,7 @@ static const NSTimeInterval AnimationTimeInterval = 2.0f;
     MYGaussianDistributionDataSource *dataSource = self.chartDataSource;
     dataSource.sigma = sender.value;
     
+    // データソースの値に応じてグラフをアニメーション付きでアップデートします。
     [self.chartViewController updateChartAnimated:YES
                                 animationDuration:AnimationTimeInterval
                                           options:kUpdateChartOptionsDoNotUpdateValueLegend];

@@ -69,7 +69,8 @@ static const float InitialSigma = 6.0f;
  *
  *  @return 各行のラベル文字列
  */
-- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController legendForRow:(int)row
+- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController
+                             legendForRow:(int)row
 {
     CGFloat x = row - self.numberOfRows / 2.0f;
     NSNumber *xNumber = (NSInteger)x % 5 == 0 ?
@@ -85,7 +86,8 @@ static const float InitialSigma = 6.0f;
  *
  *  @return 各列のラベル文字列
  */
-- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController legendForColumn:(int)column
+- (NSString *)frd3DBarChartViewController:(FRD3DBarChartViewController *)frd3DBarChartViewController
+                          legendForColumn:(int)column
 {
     CGFloat y = column - self.numberOfColumns / 2.0f;
     NSNumber *yNumber = (NSInteger)y % 5 == 0 ?
@@ -108,8 +110,10 @@ static const float InitialSigma = 6.0f;
 {
     CGFloat x = row - self.numberOfRows / 2.0f;
     CGFloat y = column - self.numberOfColumns / 2.0f;
-    CGFloat colorDepth = GaussianDistribution(x, y, self.averageX, self.averageY, self.sigma) / self.maxValue;
-    NSUInteger colorValue = (NSUInteger)(0xff * colorDepth) * 0x10000 + 0x0000ff * (1 - colorDepth);
+    CGFloat colorDepth =
+    GaussianDistribution(x, y, self.averageX, self.averageY, self.sigma) / self.maxValue;
+    NSUInteger colorValue =
+    (NSUInteger)(0xff * colorDepth) * 0x10000 + 0x0000ff * (1 - colorDepth);
     return [UIColor colorWithHexInteger:colorValue];
 }
 
@@ -131,7 +135,9 @@ CGFloat GaussianDistribution(CGFloat x, CGFloat y, CGFloat averageX, CGFloat ave
     CGFloat sigmaSquare = sigma * sigma;
     CGFloat deltaXSquare = (x - averageX) * (x - averageX);
     CGFloat deltaYSquare = (y - averageY) * (y - averageY);
-    return 1.0f / sqrtf(2 * M_PI * sigmaSquare) * exp2f(- (deltaXSquare + deltaYSquare) / 2.0f / sigmaSquare);
+    return
+    1.0f / sqrtf(2 * M_PI * sigmaSquare) *
+    expf(- (deltaXSquare + deltaYSquare) / 2.0f / sigmaSquare);
 }
 
 @end

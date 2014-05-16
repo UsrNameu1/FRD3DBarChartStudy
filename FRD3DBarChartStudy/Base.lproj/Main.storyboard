@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Gaussian Chart View Controller - Item 1-->
+        <!--Gaussian Chart View Controller - Gaussian-->
         <scene sceneID="dG2-3h-wJH">
             <objects>
                 <viewController id="taf-Ik-amb" customClass="MYGaussianChartViewController" sceneMemberID="viewController">
@@ -75,7 +75,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="jKW-dD-Hdg"/>
+                    <tabBarItem key="tabBarItem" title="Gaussian" id="jKW-dD-Hdg"/>
                     <connections>
                         <outlet property="averageXLabel" destination="MiA-y9-aWf" id="2EU-PX-mWe"/>
                         <outlet property="averageYLabel" destination="daf-Iq-MK5" id="Did-8q-eDU"/>
@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="320" y="296"/>
         </scene>
-        <!--Poisson Chart View Controller - Item 2-->
+        <!--Poisson Chart View Controller - Poisson-->
         <scene sceneID="93w-v1-fWK">
             <objects>
                 <viewController id="mae-qk-TQi" customClass="MYPoissonChartViewController" sceneMemberID="viewController">
@@ -146,7 +146,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="PAy-BA-LdS"/>
+                    <tabBarItem key="tabBarItem" title="Poisson" id="PAy-BA-LdS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDf-ql-oRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

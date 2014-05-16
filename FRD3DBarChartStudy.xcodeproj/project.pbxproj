@@ -23,6 +23,7 @@
 		14D4B65C190D5D3300B99AC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4B63E190D5D3300B99AC8 /* UIKit.framework */; };
 		14F60F7B19210FE000DB1AC2 /* MY3DChartDataSourceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */; };
 		97347495E03849BFB0AFBC43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E718D5E2803441C853DB365 /* libPods.a */; };
+		F742A22B1925F2AF008F98DF /* NSArray+Histgram.m in Sources */ = {isa = PBXBuildFile; fileRef = F742A22A1925F2AF008F98DF /* NSArray+Histgram.m */; };
 		F7D6224F1924B7D600361849 /* DataSet.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D6224E1924B7D600361849 /* DataSet.json */; };
 		F7D622521924B83800361849 /* MYPoissonDistributionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */; };
 		F7D622551924BB0300361849 /* NSBundle+MYBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D622541924BB0300361849 /* NSBundle+MYBundle.m */; };
@@ -64,6 +65,8 @@
 		14F60F7A19210FE000DB1AC2 /* MY3DChartDataSourceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY3DChartDataSourceBase.m; sourceTree = "<group>"; };
 		4E718D5E2803441C853DB365 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7CB908C71A4E6ABFF094AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F742A2291925F2AF008F98DF /* NSArray+Histgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Histgram.h"; sourceTree = "<group>"; };
+		F742A22A1925F2AF008F98DF /* NSArray+Histgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Histgram.m"; sourceTree = "<group>"; };
 		F7D6224E1924B7D600361849 /* DataSet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataSet.json; sourceTree = "<group>"; };
 		F7D622501924B83800361849 /* MYPoissonDistributionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPoissonDistributionDataSource.h; sourceTree = "<group>"; };
 		F7D622511924B83800361849 /* MYPoissonDistributionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPoissonDistributionDataSource.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				141B4870191E75E100ABD0A3 /* UIColor+Hex.m */,
 				F7D622531924BB0300361849 /* NSBundle+MYBundle.h */,
 				F7D622541924BB0300361849 /* NSBundle+MYBundle.m */,
+				F742A2291925F2AF008F98DF /* NSArray+Histgram.h */,
+				F742A22A1925F2AF008F98DF /* NSArray+Histgram.m */,
 				14D4B652190D5D3300B99AC8 /* Images.xcassets */,
 				14D4B641190D5D3300B99AC8 /* Supporting Files */,
 				F7D6224E1924B7D600361849 /* DataSet.json */,
@@ -301,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D622521924B83800361849 /* MYPoissonDistributionDataSource.m in Sources */,
+				F742A22B1925F2AF008F98DF /* NSArray+Histgram.m in Sources */,
 				14D4B651190D5D3300B99AC8 /* MYGaussianChartViewController.m in Sources */,
 				F7D622581924BE7200361849 /* MYPoissonChartViewController.m in Sources */,
 				141B4871191E75E100ABD0A3 /* UIColor+Hex.m in Sources */,

@@ -8,11 +8,14 @@
 
 #import "MY3DChartDataSourceBase.h"
 
+/**
+ *  ポアッソン分布3Dチャート表示のためのデータソースクラスです。
+ */
 @interface MYPoissonDistributionDataSource : MY3DChartDataSourceBase
 
 /**
- *  ポアッソン分布のパラメータラムダです。
+ *  ポアッソン分布の平均パラメータです。
  */
-@property (nonatomic) CGFloat lambda;
+@property (nonatomic) CGFloat average;
 
 @end
